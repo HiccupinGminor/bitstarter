@@ -4,34 +4,75 @@
 	<meta charset="UTF-8">
 	<title>My First Bitstarter</title>
 	<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
+		/*Colors
+		Versatile Green Blue: #7DA37A;
+		Shadow: #658163;
+		Dark Text: #3c493b;
+		
+		Dark Maroon: #6E5048;
+		Dark Text: #493935; (derived from Dark Maroon)
+		
+		Pink Skin: #F9EBBC;
+
+		Beige Skin: #E4CB79;
+
+		Red: #FD8A51;
+		*/
 		body{
-			padding-top:20px;
 			padding-bottom:40px;
+			color: #493935;
+		}
+		h1, h2, h3, h4, h5, h6{
+			color:#4d4d4d;
+			font-family:Source Sans Pro;
+		}
+		.heading h1{
+			margin-bottom:0;
+			color:#129656;
 		}
 		.container{
 			width: 960px;
 		}
 		p.lead{
-			padding-top: 15px;
+			padding-top:.5em;
 		}
 		.navigation, .pitch, .section1, .section2, .faq, .footer{
 			padding:10px 0px 10px 0px;
 		}
-		.video, .thermometer, .order, .social{
-			border: 1px dotted;
+		.thermometer, .order, .social{
 			text-align: center;
-		}
-		.video{
-			height: 124px;
-			line-height: 124px;
 		}
 		.thermometer, .order, .social{
 			height: 40px;
 			line-height: 40px;
 		}
-		div.row{
-			border:1px solid;
+		.thermometer .bar{
+			display:inline-block;
+			vertical-align: middle;
+		}
+		.navigation{
+			background-color:#4d4d4d;
+			color:#FFF;
+			border-bottom:3px solid #0f0f0f;
+		}
+		.footer{
+			background-color:#EEE;
+			border-top:2px solid ;
+		}
+		button{
+
+		}
+		.section1{
+			border-bottom:1px solid #CCC;
+		}
+		.section2{
+			border-bottom:1px solid #DDD;
+		}
+		.faq{
+
 		}
 	</style>
 </head>
@@ -53,18 +94,28 @@
 			</div>
 		</div>
 		<div class="row pitch">
-			<div class="span6 video">Video</div>
+			<div class="span6 video"><img src="http://placehold.it/460x200" class="img-polaroid" ></div>
 			<div class="span6">
-				<div class="thermometer">Thermometer</div>
-				<div class="order">Order</div>
-				<div class="social">Social</div>
+				<div class="thermometer">
+					<div class="progress progress-success">
+						<div class="bar" style="width: 60%;"></div>
+					</div>
+				</div>
+				<div class="order well"><button class="btn btn-success">Order</button></div>
+				<div class="social well">Social</div>
 			</div>
 		</div>
 		<div class="row section1">
-			<div class="span12">Marketing Section 1</div>
+			<div class="span12">
+				<h2>Marketing Section 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ducimus, voluptatum, voluptates, minus eaque molestiae vero vel quae eos iure praesentium accusamus laborum natus nisi nostrum voluptatem cumque. Facere, veritatis alias voluptates error inventore sint nihil iure possimus quas laborum enim officia magni unde deleniti ducimus praesentium aut quasi rerum voluptate nulla eum doloremque pariatur in quo quidem natus sunt. Molestias, nostrum, alias, facilis consectetur illo sed maxime placeat minus aliquid corrupti aperiam amet autem rem neque repellendus ex dolorum iure est doloribus magni beatae voluptas deserunt assumenda ad possimus. Amet tempora debitis odio earum non quidem provident. Voluptates, modi?</p>
+			</div>
 		</div>
 		<div class="row section2">
-			<div class="span12">Marketing Section 2</div>
+			<div class="span12">
+				<h3>Marketing Section 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, sit tenetur labore amet mollitia repellendus error. Itaque, assumenda suscipit iste modi cupiditate officiis laudantium ad eum cumque nihil aliquid voluptate placeat perspiciatis ducimus obcaecati fugiat iusto hic minima nam consequuntur ipsam esse facilis ipsa fuga eius quae illum vero possimus architecto nemo neque quibusdam pariatur similique sunt quia facere sint. Sunt, expedita totam nulla eligendi soluta dolor quae a enim.</p>
+			</div>
 		</div>
 		<div class="row faq">
 			<div class="span12">FAQ</div>
